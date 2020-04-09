@@ -1,0 +1,44 @@
+html {
+  background: url(https://c2.peakpx.com/wallpaper/693/434/405/espresso-coffee-beans-cafe-black-wallpaper.jpg);
+  background-size: cover;
+}
+.btn-group button {
+  background-color: black; 
+  border: 1px solid black; 
+  color: white; 
+  padding: 24px 24px;
+  cursor: pointer; 
+  float: center; 
+  width: 33%;}
+ 
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; 
+}
+
+
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.btn-group button:hover {
+  background-color: black;
+}
+
+
+fling-minislide {
+	width:350px; height:300px; overflow:hidden; position:relative; 
+}
+.fling-minislide img{ 
+position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 100%; height: auto;
+}
+
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+.fling-minislide img:(4){animation-delay:0s;}
+.fling-minislide img:(3){animation-delay:5s;}
+.fling-minislide img:(2){animation-delay:10s;}
+.fling-minislide img:(1){animation-delay:15s;}
